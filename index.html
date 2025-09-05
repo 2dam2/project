@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리디북스</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header_top">
+                <div class="logo">
+                    <i class="fa-brands fa-instagram"></i></div>
+                <div class="h_right">
+                    <div class="search"></div>
+                    <div class="mypage"></div>
+                </div>
+            </div>
+            <div class="header_b">
+                <nav>
+                    <ul>
+                        <li><a href="#">웹툰</a></li>
+                        <li><a href="#">만화</a></li>
+                        <li><a href="#">웹소설</a></li>
+                        <li><a href="#">도서</a></li>
+                        <li><a href="#">셀렉트</a></li>
+                    </ul>
+                </nav>
+                <div class="category"></div>
+            </div>
+
+        </div>
+    </header>
+
+            <nav class="category-bar">
+                <a href="#" class="active">추천</a>
+                <a href="#">로맨스</a>
+                <a href="#">BL</a>
+                <a href="#">판타지/SF</a>
+                <a href="#">액션/무협</a>
+                <a href="#">드라마</a>
+                <a href="#">공포/추리</a>
+                <a href="#">GL</a>
+            </nav>
+
+
+    <div id="slider">
+        <!-- <캐러셀> 슬라이더 옆으로 움직이는것= -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div id="shortcut-menu">
+        <a href="#">
+            <div class="icon">ALL 100</div>
+            <span>대여100원</span>
+        </a>
+        <a href="#">
+            <div class="icon">N</div>
+            <span>신작</span>
+        </a>
+        <a href="#">
+            <div class="icon">🎉</div>
+            <span>이벤트</span>
+        </a>
+        <a href="#">
+            <div class="icon">R ONLY</div>
+            <span>리디온리</span>
+        </a>
+        <a href="#">
+            <div class="icon">⏰</div>
+            <span>리다무</span>
+        </a>
+        <a href="#">
+            <div class="icon">100원</div>
+            <span>ALL100</span>
+        </a>
+        <a href="#">
+            <div class="icon">📅</div>
+            <span>이달의 신작</span>
+        </a>
+        <a href="#">
+            <div class="icon">단편</div>
+            <span>단편작</span>
+        </a>
+    </div>
+
+
+    <div class="newslid"><!-- Swiper -->
+        <div class="swiper new_item">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+
+        </div>
+
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+                clickable: true
+            },
+        });
+
+        //new
+        var swiper = new Swiper(".new_item", {
+            slidesPerView: 6,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

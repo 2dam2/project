@@ -1,0 +1,135 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  padding: 40px;
+}
+
+.category-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.category-item.selected .circle {
+  background-color: #3fa8ff; /* 파란색 */
+  color: white;
+}
+
+.label {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #000;
+}
+
+/* 웹툰실시간 */
+
+.ranking-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ranking-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: lightblue;
+}
+
+/* 웹툰 항목 */
+.webtoon-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* 순위 번호 */
+.rank-number {
+  font-size: 20px;
+  font-weight: bold;
+  width: 30px;
+  text-align: center;
+}
+
+/* 썸네일 */
+.thumbnail {
+  position: relative;
+  width: 80px;
+  height: 110px;
+  background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* 19 배지 */
+.age-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: #cc0000;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* 썸네일 대체 박스 */
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+}
+
+/* 웹툰 정보 */
+.webtoon-info {
+  flex: 1;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 4px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 4px;
+}
+
+.rating {
+  font-size: 14px;
+  color: #cc0000;
+  font-weight: bold;
+  margin: 0;
+}
