@@ -122,11 +122,12 @@ nav ul li:hover {
 
 .category-bar {
     width: 1120px;      /* 슬라이더랑 같은 너비*/
+    height: 50px;
     margin: 0 auto;     /* 가운데 정렬*/
     display: flex;      /*가로배치*/
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     border-bottom: 2px solid #eee;
     padding: 10px 0;
     white-space: nowrap;
@@ -176,7 +177,7 @@ nav ul li:hover {
 #shortcut-menu .icon{
     width: 60px;
     height: 60px;
-    background-color: #f1f1f1;
+    background-color: lightgray;
     border-radius: 50%;
     display: flex;
     align-items: center;
