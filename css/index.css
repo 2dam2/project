@@ -25,21 +25,8 @@
     }
 
 
-
-/* 제목 + 캐러셀 전체 감싸는 영역 */
-.ranking-section {
-  width: 1120px;       /* 캐러셀과 같은 폭으로 */
-  margin: auto;        /* 가운데 정렬 */
-}
-
-.ranking-title {
-  margin: 0 0 15px 10px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* 캐러셀 전체 */
-.carousel {
+/* 웹툰 실시간 랭킹 전체 */
+.ranking {
   position: relative;
   width: 1120px;
   margin: auto;
@@ -47,13 +34,13 @@
 }
 
 /* 트랙 */
-.carousel-track {
+.ranking-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
 /* 슬라이드 (한 화면 = 9개) */
-.carousel-slide {
+.ranking-slide {
   min-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 가로 3개 */
@@ -115,7 +102,7 @@
 /* 랭킹 번호 (왼쪽에 크게) */
 .rank-number {
   position: absolute;
-  left: 5px;
+  right: 5px;
   bottom: 5px;
   font-size: 20px;
   font-weight: bold;
@@ -140,4 +127,46 @@ button.prev { left: 10px; }
 button.next { right: 10px; }
 
 
+/* 웹툰 실시간 랭킹 */
+/* 제목 + 캐러셀 전체 감싸는 영역 */
+.ranking-section {
+  width: 1120px;       /* 캐러셀과 같은 폭으로 */
+  margin: auto;        /* 가운데 정렬 */
+}
+
+.ranking-title {
+  margin: 0 0 15px 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.week {
+  width: 1120px;       /* 캐러셀과 같은 폭으로 */
+  margin: auto;        /* 가운데 정렬 */
+}
+
+.week-title {
+  margin: 0 0 15px 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* 기다리면 무료로 시작해! */
+.wait {
+  width: 1120px;       /* 캐러셀과 같은 폭으로 */
+  margin: auto;        /* 가운데 정렬 */
+}
+
+.wait-free {
+  margin: 0 0 15px 10px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26px;
+  box-sizing: border-box;
+}
+
+
 .newslide{width: 1120px; height: 250px; margin: 0 auto;}
+
+
+

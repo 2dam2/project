@@ -110,12 +110,12 @@
     <div class="ranking-section">
         <h2 class="ranking-title">웹툰 실시간 랭킹</h2>
 
-        <div class="carousel">
+        <div class="ranking">
             <button class="prev">&#10094;</button>
-            <div class="carousel-track">
+            <div class="ranking-track">
 
                 <!-- 슬라이드 1 -->
-                <div class="carousel-slide">
+                <div class="ranking-slide">
 
                     <!-- 1번 아이템 -->
                     <div class="rank-item">
@@ -253,66 +253,84 @@
 
 
 
-    <div class="ranking-container"></div>
-
-    <div class="newslide"><!-- Swiper -->
-        <div class="swiper new_item">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
+    <div class="week">
+        <h2 class="week-title">요일별 웹툰</h2>
     </div>
 
+    <!-- 시험 -->
 
-    <footer>
-        <div class="container">
+    <div class="week-day">
+        <button>월</button>
 
+
+
+        <!-- 시험 -->
+
+
+
+        <div class="newslide"><!-- Swiper -->
+            <div class="swiper new_item">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
 
-    </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <div class="wait">
+        <h2 class="wait-free">기다리면 무료로 시작해!</h2>
+    </div>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-                clickable: true
-            },
-        });
+        <footer>
+            <div class="container">
 
-        //new
-        var swiper = new Swiper(".new_item", {
-            slidesPerView: 6,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
+            </div>
+
+        </footer>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                    clickable: true
+                },
+            });
+
+            //new
+            var swiper = new Swiper(".new_item", {
+                slidesPerView: 6,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+        </script>
 </body>
 
 </html>

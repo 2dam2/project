@@ -175,8 +175,8 @@ nav ul li:hover {
 }
 
 #shortcut-menu .icon{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background-color: lightgray;
     border-radius: 50%;
     display: flex;
@@ -191,6 +191,9 @@ nav ul li:hover {
     background-color: #007aff; 
     color: white;
 }
+
+
+
 
 /* footer */
 footer {
