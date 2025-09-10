@@ -127,45 +127,6 @@ button.prev { left: 10px; }
 button.next { right: 10px; }
 
 
-/* 웹툰 실시간 랭킹 */
-/* 제목 + 캐러셀 전체 감싸는 영역 */
-.ranking-section {
-  width: 1120px;       /* 캐러셀과 같은 폭으로 */
-  margin: auto;        /* 가운데 정렬 */
-}
-
-.ranking-title {
-  margin: 0 0 15px 10px;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.week {
-  width: 1120px;       /* 캐러셀과 같은 폭으로 */
-  margin: auto;        /* 가운데 정렬 */
-}
-
-.week-title {
-  margin: 0 0 15px 10px;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-/* 기다리면 무료로 시작해! */
-.wait {
-  width: 1120px;       /* 캐러셀과 같은 폭으로 */
-  margin: auto;        /* 가운데 정렬 */
-}
-
-.wait-free {
-  margin: 0 0 15px 10px;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 26px;
-  box-sizing: border-box;
-}
-
-
 .newslide{width: 1120px; height: 250px; margin: 0 auto;}
 
 
