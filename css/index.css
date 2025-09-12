@@ -128,6 +128,13 @@ button.next { right: 10px; }
 
 
 .newslide{width: 1120px; height: 250px; margin: 0 auto;}
+.new_item .swiper-slide {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
 
+.new_item .swiper-slide img {width: auto; height: 150px;}
+.new_item .swiper-slide h3{font-size: 18px; width: 100%;}
 
+.imgsc{width: 100%;}
 
