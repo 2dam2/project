@@ -66,15 +66,12 @@ nav ul li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #eee;
     padding:15px 20px 15px 0; /* (상,우,하,좌) — 좌측만 0 */
 }
 
 
 
 .logo {
-    /* width: 70px;
-    height: 35px; */
     display:flex;          /* 세로 가운데 정렬 유지하려면 flex */
     align-items:center;
 }
@@ -89,8 +86,6 @@ nav ul li:hover {
 /* .logo img {font-size: 40px; color: #f0f0f0;} */
 
 .h_right {
-    /* width: 400px;
-    height: 35px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,6 +183,8 @@ nav ul li:hover {
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
+    border-bottom: 1px solid #eee;
+
 }
 
 .header_b nav {
@@ -227,9 +224,9 @@ nav ul li:hover {
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
-    border-bottom: 2px solid #eee;
     padding: 10px 0;
     white-space: nowrap;
+    margin-bottom: 10px;
 
 
 }    
@@ -240,7 +237,7 @@ nav ul li:hover {
     font-size: 16px;
     font-weight: 500;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: 0.2s;
     display: inline-block;
     white-space: nowrap;    
@@ -262,6 +259,7 @@ nav ul li:hover {
     justify-content: center;
     gap :20px;
     margin: 20px 0;
+    margin-bottom: 30px;
 }
 
 #shortcut-menu a{
@@ -418,6 +416,37 @@ nav ul li:hover {
 #copy p {
   margin: 0; /* 기본 여백 제거 */
 }
+
+/* 웹툰/만화 키워드 검색 */
+.kward-section {
+  margin-bottom: 50px;
+}
+
+.kward {
+    width: 1120px;      /* 슬라이더랑 같은 너비*/
+    height: 50px;
+    margin: 0 auto;     /* 가운데 정렬*/
+    display: flex;      /*가로배치*/
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    white-space: nowrap;
+}    
+
+.kward a{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+    display: inline-block;
+    white-space: nowrap;    
+}
+
+
 /* footer */
 footer {
     width: 100%;

@@ -23,15 +23,15 @@ async function fetchBooks(query) {
 
 async function bookData() {
     try {
-        const querys = ["자바스크립트", "강아지","고양이","귀멸의 칼날","진격의 거인","인생","요리"];
+
 
         for (let i=0; i < 9; i++) {
-            const data = await fetchBooks("귀멸의 칼날");
-            console.log(data);
+            const data = await fetchBooks("진격의 거인");
+            // console.log(data);
 
             // .box 요소 전체 선택
-            const boxElements = document.querySelectorAll(".two3 div");
-            console.log(boxElements)
+            const boxElements = document.querySelectorAll(".two2 div");
+            // console.log(boxElements)
 
             // documents 데이터를 각 box에 대응하여 렌더링
 
