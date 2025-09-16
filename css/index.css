@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* slider */
-#slider {width: 1120px; height: 420px; margin: 0 auto; margin-top: 0;}
+#slider {width: 1120px; height: 420px; margin: 0 auto; margin-top: 0; margin-bottom: 30px;}
 
  .swiper {
       width: 100%;
@@ -25,6 +25,7 @@
     }
 
 
+
 .ranking-section{
   margin-bottom: 50px;
 }
@@ -35,6 +36,12 @@
   width: 1120px;
   margin: auto;
   overflow: hidden;
+}
+
+.rank-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 트랙 */
@@ -57,7 +64,7 @@
 
 /* 랭킹 아이템 전체 */
 .rank-item {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -68,18 +75,21 @@
 
 /* 썸네일 (왼쪽 이미지) */
 .rank-img {
-  width: 60px;
-  height: 80px;
+  width: 80px;
+  height: 116px;
   background: #ccc;
   border-radius: 4px;
   flex-shrink: 0;
   margin-right: 10px;
+  overflow: hidden;
 }
 
-/* .rank-img .img{
+.rank-img img{
   display: block;
-  width: 100%; */
-}
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+ }
 
 /* 정보 부분 */
 .rank-info {
@@ -108,14 +118,15 @@
   color: red;
 }
 
-/* 랭킹 번호 (왼쪽에 크게) */
+/* 랭킹 숫자 */
 .rank-number {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #c00;
+  font-size: 20px;             /* 글자 크기 */
+  font-weight: bold;           /* 굵게 */
+  flex-shrink: 0;              /* 줄어들지 않게 고정 */
+  text-align: center;          /* 가운데 정렬 */
+  width: 25px;                 /* 고정 폭 (칸 일정하게) */
+  margin: 15px;
+
 }
 
 /* 좌우 버튼 */

@@ -26,7 +26,7 @@ async function bookData() {
         const querys = ["자바스크립트", "강아지","고양이","귀멸의 칼날","진격의 거인","인생","요리"];
 
         for (let i=0; i < 9; i++) {
-            const data = await fetchBooks("귀멸의 칼날");
+            const data = await fetchBooks("귀멸의칼날");
             console.log(data);
 
             // .box 요소 전체 선택

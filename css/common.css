@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'NanumSquareRound';
+    font-family: 'Pretendard Variable', 'sans-serif';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
     font-weight: 700;
     font-display: swap;
@@ -303,16 +303,119 @@ nav ul li:hover {
   font-weight: bold;
 }
 
+
+.event { 
+  max-width:1120px; 
+  margin:0 auto; 
+  margin-bottom: 50px;
+}      
+
+.event-title{
+  display:flex;
+  justify-content:space-between;   /* 왼쪽: 제목 / 오른쪽: 더보기 */
+  align-items:center;
+  gap:12px;
+  margin:0 0 14px;                 
+  font-size:22px;                  
+  line-height:1.2;
+}
+
+/* 더보기 버튼 스타일 */
+.event-title .more{
+  margin-left:auto;                 
+  font-size:16px;
+  color:#6b7280;                    
+  text-decoration:none;
+}
+.event-title .more:hover{ text-decoration:underline; }
+
+.event-box { 
+  display:flex; 
+  gap:15px; 
+  align-items:stretch; 
+}  
+
+.event-small{
+  --imgW: 170px;       /* 오른쪽 이미지 너비 */
+  --cardH: 90px;       /* 카드 높이 고정 */
+  position:relative;
+  flex:1;
+  height: var(--cardH);
+  border-radius:4px;
+  color:#fff;
+  padding:20px calc(var(--imgW) + 0px) 20px 20px;
+  background: var(--cardColor);     /* 카드별 배경색 변수 적용 */
+  overflow:hidden;
+  box-sizing:border-box;
+  
+}
+
+.event-info{ position:relative; z-index:1; }
+.event-info h3{ margin:0 0 6px; font-size:14px; line-height:1.3; }
+.event-info p{ margin:0; font-size:7px; opacity:.9; }
+
+/* === 오른쪽 이미지 영역 === */
+.event-small img{
+  position:absolute; 
+  top:0; 
+  right:0;
+  height: 100%;                
+  object-fit: cover;
+  display:block;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+  z-index:0; 
+  pointer-events:none;
+}
+
+/* 가독성 보정 */
+.event-small::before{
+  content:""; 
+  position:absolute; 
+  inset:0;
+  background:linear-gradient(90deg, rgba(0,0,0,.18) 0%, rgba(0,0,0,.1) 50%, rgba(0,0,0,0) 65%);
+  z-index:0; 
+  pointer-events:none;
+}
+
+/* 카드별 색상 */
+.event-box .event-small:nth-child(1){ --cardColor: #24315d; } 
+.event-box .event-small:nth-child(2){ --cardColor: #0581d6; } 
+.event-box .event-small:nth-child(3){ --cardColor: #04181a; } 
+
+/* 모바일 */
+@media (max-width:640px){
+  .event-box{ flex-direction:column; }
+  .event-small{
+    --imgW: 100%;
+    --cardH: auto;
+    padding:16px 16px 160px 16px;
+  }
+  .event-small img{
+    width:100%; height:160px; right:0; bottom:0; top:auto;
+    border-radius:0 0 10px 10px;
+  }
+}
+
+
+
+/* 오늘, 리디의 발견 */
+
 .week {
   width: 1120px;       /* 캐러셀과 같은 폭으로 */
   margin: auto;        /* 가운데 정렬 */
 }
 
 .week-title {
-  margin: 0 0 15px 10px;
-  font-size: 22px;
-  font-weight: bold;
+  font-weight: bold; 
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 14px;                 
+  font-size:22px;                  
+  line-height:1.2;
 }
+
 
 /* 기다리면 무료로 시작해! */ 
 .wait-section {
@@ -321,11 +424,13 @@ nav ul li:hover {
 }
 
 .wait-free {
-  margin: 0 0 15px 10px;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 26px;
-  box-sizing: border-box;
+  font-weight: bold; 
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 14px;                 
+  font-size:22px;                  
+  line-height:1.2;
 }
 
 .wrap{

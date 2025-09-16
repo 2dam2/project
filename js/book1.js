@@ -26,7 +26,7 @@ async function bookData() {
 
 
         for (let i=0; i < 9; i++) {
-            const data = await fetchBooks("진격의 거인");
+            const data = await fetchBooks("아이유");
             // console.log(data);
 
             // .box 요소 전체 선택
