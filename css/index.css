@@ -25,6 +25,57 @@
     }
 
 
+/* ───────── Hero 슬라이드 오버레이 ───────── */
+.mySwiper { height: 420px; }           /* #slider 높이와 맞춤 */
+
+.mySwiper .swiper-slide { position: relative; }
+
+/* 배경 이미지 톤 다운 + 화면 채우기 */
+.mySwiper .swiper-slide img {
+  height: 100%;                /* 주석 해제 */
+  object-fit: cover;
+  filter: brightness(0.78);    /* 어둡게 → 글씨 살리기 */
+}
+
+/* 오버레이 텍스트 컨테이너 */
+.slide-content{
+  position: absolute;
+  left: 40px;       /* → 원하는 만큼 간격 조절 */
+  bottom: 30px;     /* → 아래에서 40px 위 */
+  z-index: 10;
+  color: #fff;
+  max-width: 520px;
+  display:flex;        /* 세로 스택 배치 */
+  flex-direction:column;
+  align-items:flex-start; /* 왼쪽 정렬 */
+  text-align:left;        /* 글자도 왼쪽 정렬 */
+}
+
+
+/* 배지 영역 */
+.badges { display: flex; gap: 8px; margin-bottom: 16px; }
+.badge  {
+  padding: 2px 8px;
+  border: 1px solid rgba(255,255,255,.9);
+  border-radius: 4px;
+  font-size: 12px; font-weight: 700;
+  backdrop-filter: blur(4px);
+}
+
+/* 제목/부제목 */
+.slide-content h2 {
+  margin: 0 0 12px;
+  font-size: 32px; font-weight: 700; line-height: 1.3;
+}
+.slide-content p { margin: 0; font-size: 16px; font-weight: 500; }
+
+/* 모바일 폰트 감소 */
+@media (max-width: 768px){
+  .mySwiper { height: 320px; }
+  .slide-content h2 { font-size: 28px; }
+}
+
+    
 
 .ranking-section{
   margin-bottom: 50px;
