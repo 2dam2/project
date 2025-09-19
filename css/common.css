@@ -56,9 +56,6 @@ nav ul li {
     padding: 50 30px;
 }
 
-nav ul li:hover {
-    background-color: lightgray;
-}
 
 .header_top {
     width: 100%;
@@ -175,6 +172,38 @@ nav ul li:hover {
   white-space:nowrap;    /* 긴 단어도 줄바꿈 방지 */
 }
 
+.category-actions{
+  display:inline-flex;
+  align-items:center;
+  gap:16px;                 /* 두 항목 간 간격 */
+  font-size:14px;
+  margin-left:auto;         /* nav가 flex일 때 오른쪽으로 밀기 */
+}
+
+.category-actions a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;                  /* 아이콘-텍스트 간 간격 */
+  color:#111;
+  text-decoration:none;
+  line-height:1;
+  padding:6px 8px;
+  border-radius:8px;
+  transition:background .2s ease, color .2s ease;
+}
+
+.category-actions i{
+  font-size:16px;
+}
+
+.category-actions a + a::before{
+  content:"/";
+  position:absolute;
+  left:-12px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#d1d5db;
+}
 
 .header_b {
     width: 100%;
@@ -191,6 +220,16 @@ nav ul li:hover {
     width: 300px;
     height: 25px;
 }
+
+.header_b a:hover {
+    color: lightgray;
+}
+
+.header_bf a
+{
+  color:#007aff;
+}
+
 
 .category {
     width: 225px;
@@ -223,7 +262,7 @@ nav ul li:hover {
     display: flex;      /*가로배치*/
     justify-content: flex-start;
     align-items: center;
-    gap: 15px;
+    gap: 6px;
     padding: 10px 0;
     white-space: nowrap;
     margin-bottom: 10px;
@@ -237,7 +276,7 @@ nav ul li:hover {
     font-size: 16px;
     font-weight: 500;
     padding: 5px 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     transition: 0.2s;
     display: inline-block;
     white-space: nowrap;    
@@ -384,7 +423,7 @@ nav ul li:hover {
 .event-box .event-small:nth-child(3){ --cardColor: #04181a; } 
 
 /* 모바일 */
-@media (max-width:640px){
+/* @media (max-width:640px){
   .event-box{ flex-direction:column; }
   .event-small{
     --imgW: 100%;
@@ -395,7 +434,7 @@ nav ul li:hover {
     width:100%; height:160px; right:0; bottom:0; top:auto;
     border-radius:0 0 10px 10px;
   }
-}
+} */
 
 
 

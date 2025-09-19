@@ -26,7 +26,7 @@ async function bookData() {
 
 
         for (let i=0; i < 9; i++) {
-            const data = await fetchBooks("아이유");
+            const data = await fetchBooks("코인");
             // console.log(data);
 
             // .box 요소 전체 선택
@@ -45,14 +45,14 @@ async function bookData() {
             boxElements[i].appendChild(img);
 
             // <h3> 제목
-            const h3 = document.createElement("h3");
+            const h3 = document.createElement("h5");
             h3.textContent = doc.title;
             boxElements[i].appendChild(h3);
 
-            // <h6> 저자
-            const h6 = document.createElement("h6");
-            h6.textContent = doc.authors;
-            boxElements[i].appendChild(h6);
+            // // <h6> 저자
+            // const h6 = document.createElement("h6");
+            // h6.textContent = doc.authors;
+            // boxElements[i].appendChild(h6);
 
 
         }

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* slider */
-#slider {width: 1120px; height: 420px; margin: 0 auto; margin-top: 0; margin-bottom: 30px;}
+#slider {width: 1120px; height: 420px; margin: 0 auto; margin-top: 0; margin-bottom: 30px; }
 
  .swiper {
       width: 100%;
@@ -15,6 +15,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
     }
 
     .swiper-slide img {
@@ -75,7 +76,9 @@
   .slide-content h2 { font-size: 28px; }
 }
 
-    
+.mySwiper .swiper-slide img{
+  border-radius: 10px;
+}
 
 .ranking-section{
   margin-bottom: 50px;
@@ -203,7 +206,7 @@ button.next { right: 10px; }
   flex-wrap: wrap;
   align-items: flex-start;
   /* background-color: lightblue; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 5px;
 }
 
